@@ -177,10 +177,17 @@ transition: transform 1.5s ease-in-out, opacity 1s ease-in;
         width: 12vh;
     }
 
-    #projet-resume{
-    padding-bottom: 7vh;
+    #projet-resume {
+        padding-bottom: 7vh;
+    }
+
+    #col-comp {
+        margin-left: 1vh;
+        margin-right: 2vh;
     }
 }
+
+
 
 
 
