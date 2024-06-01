@@ -23,6 +23,10 @@ font-size: 1.5rem;
 font-family: "Fjalla One", sans-serif;
 }
 
+h3{
+margin-bottom: 3vh;
+}
+
 h6{
 font-family: "Fjalla One", sans-serif;
 font-size: medium;
@@ -80,9 +84,8 @@ padding: 5vh;
 padding-bottom: 20vh;
 }
 
-#liste-xp li{
-font-size: 1rem;
-margin-top: 2vh;
+#exp{
+padding-bottom: 15vh;
 }
 
 #competences-icon img{
@@ -158,7 +161,6 @@ transition: transform 1.5s ease-in-out, opacity 1s ease-in;
         width: 20%;
     }
 }
-
 @media screen and (max-width: 425px) {
     .equal-height {
         display: flex;
@@ -186,8 +188,5 @@ transition: transform 1.5s ease-in-out, opacity 1s ease-in;
         margin-right: 2vh;
     }
 }
-
-
-
 
 
