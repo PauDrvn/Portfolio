@@ -126,12 +126,9 @@ transform: scale(2);
 }
 
 i{
-margin-left: 1.2vh;
+margin-left: 1.4vh;
 }
 
-li{
-list-style: none;
-}
 
 .carousel-item{
 transition: transform 1.5s ease-in-out, opacity 1s ease-in;
