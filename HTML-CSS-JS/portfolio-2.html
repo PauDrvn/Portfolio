@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Pauline Drouvin - Mon parcours et compétences</title>
+    <title>Portfolio Pauline Drouvin - Accueil</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -23,6 +23,11 @@
     <header class="mb-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 rounded">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
@@ -37,56 +42,55 @@
                             <a class="nav-link active" href="portfolio-3.html">Mes projets en cours <i
                                     class="fa-solid fa-briefcase fa-xl"></i></a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="portfolio-4.html">Contact <i
-                                    class="fa-solid fa-at fa-xl"></i></a> -->
-                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <!-- Section Resumé -->
-    <section class="container rounded text-center mb-5">
+
+    <section class="container" style="margin-bottom: 7vh;">
         <div class="row">
-            <div class="col-3">
-                <div class="rounded shadow" id="infos">
-                    <figure><img src="../Image/photo-cv.jpg" alt="avatar" class="photo-cv"></figure>
-                    <h3>Bonjour !</h3>
-                    <h1 id="titre-profil"> Je suis Pauline Drouvin &#128075</h1>
-                    <p>Je suis ingénieure écologue en reconversion dans le développement web !
+            <div class="col-3 text-center rounded shadow" id="section-profil">
+                <img src="../Image/photo-cv.jpg" alt="photo-cv" class="photo-cv img-fluid">
+                <h3>Bonjour !</h3>
+                <h1 id="titre-profil"> Je suis Pauline Drouvin &#128075</h1>
+                <p>Je suis ingénieure écologue en reconversion dans le développement web !
                     J'ai acquis les bases de programmation grâce à la "Nurserie Numérique". &#128187 <br>
                     Je continue de me former en ligne en parallèle de ma recherche d'alternance pour compléter
                     mes connaissances de bases. J'ai hâte d'échanger avec vous pour de nouvelles opportunités !
-                    </p>
-                    <p><i class="fa-solid fa-phone"></i> 06 24 67 25 46</p>
-                    <p><i class="fa-solid fa-envelope"></i> pauline.drvn@hotmail.com</p>
-                    <p><i class="fa-solid fa-house"></i> Nieppe - 59850</p>
-                    <p><i class="fa-solid fa-language"></i> Anglais B2</p>
+                </p>
+                <button id="telecharger" class="rounded"
+                    onclick="window.location.href='https://drive.google.com/file/d/1aK2aeKeeDy4cADp1lTSfpeFqmGNMIrpG/view?usp=drive_link'">Télécharger
+                    le CV</button>
+                <button id="contactez-moi" class="rounded"><a href="mailto:pauline.drvn@hotmail.com"
+                        style="text-decoration: none; color:black;">Contactez-moi</a></button>
+                <div>
+                    <img src="../Image/qr-code-linkedin.png" alt="qrcode-linkedin" class="qrcode img-fluid">
+                    <img src="../Image/qr-code-github.png" alt="qr-code-github" class="qrcode img-fluid">
                 </div>
             </div>
-            <div class="col">
-                <div class="row ms-3" id="col-form">
-                    <div class="row-6 rounded shadow" id="formation">
-                        <h3>Ma Formation</h3>
-                        <h6>Nurserie Numérique - Lille - Octobre 2023</h6>
-                        <p>
-                        <ul style="list-style: none;">
-                            <li>Apprentissage des bases de programmation</li>
-                            <li>Découverte de la méthode de gestion de projet Scrum</li>
-                        </ul>
-                        <h6>Master Ecologie et Restauration des Milieux Dégradés - Lille - 2017</h6>
-                        <p>
-                        <ul style="list-style: none;">
-                            <li>Analyse de données avec langage R et SQL</li>
-                        </ul>
-                        </p>
+
+            <div class="col-5" >
+                <div class="row" id="formation-exp">
+                    <div class="row-6 rounded shadow text-center" id="formation">
+                        <h3>Ma formation</h3>
+                        <h6>Octobre 2023 : Nurserie Numérique</h6>
+                            <ul>
+                                
+                                <li>Apprentissage des bases de programmation</li>
+                                <li>Découverte de la méthode de gestion de projet Scrum</li>
+                            </ul>
+                            <br>
+                            <h6>2017 - 2020 Master Ecologie et Restauration des Milieux Dégradés</h6>
+                            <ul>
+                                <li>Analyse de données avec langage R et SQL</li>
+                            </ul>
                     </div>
-                    <div class="row-6 rounded shadow" style="margin-top: 6vh;" id="exp">
+                    <div class="row-6 rounded shadow text-center" id="exp" style="margin-top: 8vh;">
                         <h3>Mes expériences professionnelles</h3>
                         <h6>Ecologue - Entime - Armentières - Septembre 2022</h6>
-                        <p>Dianostic de milieux naturels et Cartographies</p>
+                        <p>Diagnostic de milieux naturels et Cartographies</p>
                         <h6>Chargée de mission biodiversité - ORB HDF - Bailleul - Mai 2021 à Janvier 2022 </h6>
                         <p>Evaluation des indicateurs de biodiversité régionale</p>
                         <h6>Chargée d'études - Eco'Logic - Lille - Avril 2020 à Octobre 2020</h6>
@@ -96,44 +100,41 @@
                     </div>
                 </div>
             </div>
-
-            <div class="col">
-                <div class="row ms-4" id="col-comp">
-                    <div class="row-3 rounded shadow" id="skills">
+            <div class="col-4">
+                <div class="row" id="col-comp">
+                    <div class="row-3 rounded shadow text-center" id="skills">
                         <h3>Mes Soft Skills</h3>
                         <ul style="list-style: none;">
-                            <li>Travail d'équipe  <i class="fa-solid fa-people-group fa-xl"></i></li>
-                            <li>Créativité  <i class="fa-solid fa-paintbrush fa-xl"></i></li>
-                            <li>Curiosité  <i class="fa-solid fa-binoculars fa-xl"></i></li>
+                            <li>Travail d'équipe <i class="fa-solid fa-people-group fa-xl"></i></li>
+                            <li>Créativité <i class="fa-solid fa-paintbrush fa-xl"></i></li>
+                            <li>Curiosité <i class="fa-solid fa-binoculars fa-xl"></i></li>
                             <li>Apprentissage collectif<i class="fa-solid fa-chalkboard fa-xl"></i></li>
                         </ul>
                     </div>
-                    <div class="row-4 rounded mt-5 shadow" id="competences">
+                    <div class="row-4 rounded shadow text-center" id="competences" style="margin-top: 6vh;">
                         <h3>Mes compétences numériques</h3>
-                        <img src="../Image/html.png" alt="HTML" class="icon">
-                        <img src="../Image/css.png" alt="CSS" class="icon">
-                        <img src="../Image/js.png" alt="JS" class="icon">
-                        <img src="../Image/bootstrap.png" alt="Bootstrap" class="icon">
-                        <img src="../Image/sql.png" alt="SQL" class="icon">
-                        <img src="../Image/R.png" alt="R" class="icon">
-                        <img src="../Image/wordpress_PNG74.png" alt="WordPress" class="icon">
-                        <img src="../Image/figma.png" alt="Figma" class="icon">
-                        <img src="../Image/canva.jpg" alt="Canva" class="icon">
-                        <img src="../Image/GitHub_logo.png" alt="GitHub" class="icon">
-                    </div>                
-                    <div class="row-4 rounded mt-5 shadow" id="passions">
-                    <h3>Mes loisirs</h3>
-                    <ul style="list-style: none;">
-                        <li> Photographie naturaliste: 3 ans <i class="fa-solid fa-camera-retro fa-xl"></i></li>
-                        <li>Lecture fantasy, dystopie et mythologie <i class="fa-solid fa-book fa-xl"></i></li>
-                        <li>Yoga : 2 ans <i class="fa-solid fa-spa fa-xl"></i></li>
-                    </ul>
-                </div>
+                        <img src="../Image/html.png" alt="HTML" class="icon img-fluid">
+                        <img src="../Image/css.png" alt="CSS" class="icon img-fluid">
+                        <img src="../Image/js.png" alt="JS" class="icon img-fluid">
+                        <img src="../Image/bootstrap.png" alt="Bootstrap" class="icon img-fluid">
+                        <img src="../Image/sql.png" alt="SQL" class="icon img-fluid">
+                        <img src="../Image/R.png" alt="R" class="icon img-fluid">
+                        <img src="../Image/wordpress_PNG74.png" alt="WordPress" class="icon img-fluid">
+                        <img src="../Image/figma.png" alt="Figma" class="icon img-fluid">
+                        <img src="../Image/canva.jpg" alt="Canva" class="icon img-fluid">
+                        <img src="../Image/GitHub_logo.png" alt="GitHub" class="icon img-fluid">
+                    </div>
+                    <div class="row-4 rounded shadow text-center" id="passions" style="margin-top: 6vh;">
+                        <h3>Mes loisirs</h3>
+                        <ul style="list-style: none;">
+                            <li> Photographie naturaliste: 3 ans <i class="fa-solid fa-camera-retro fa-xl"></i></li>
+                            <li>Lecture fantasy, dystopie et mythologie <i class="fa-solid fa-book fa-xl"></i></li>
+                            <li>Yoga : 2 ans <i class="fa-solid fa-spa fa-xl"></i></li>
+                        </ul>
+                    </div>
 
                 </div>
-
             </div>
-        </div>
     </section>
 </body>
 

@@ -23,84 +23,97 @@
     <header class="mb-5">
         <nav class="navbar navbar-expand-lg bg-body-tertiary m-3 rounded">
             <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active"  href="portfolio-1.html">A propos de moi <i class="fa-solid fa-user fa-xl"></i></a>
+                            <a class="nav-link active" href="index.html">A propos de moi <i
+                                    class="fa-solid fa-user fa-xl"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="portfolio-2.html">Mon parcours & Compétences <i class="fa-solid fa-newspaper fa-xl"></i></a>
+                            <a class="nav-link active" href="portfolio-2.html">Mon parcours & Compétences <i
+                                    class="fa-solid fa-newspaper fa-xl"></i></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active" href="portfolio-3.html">Mes projets en cours <i class="fa-solid fa-briefcase fa-xl"></i></a>
+                            <a class="nav-link active" href="portfolio-3.html">Mes projets en cours <i
+                                    class="fa-solid fa-briefcase fa-xl"></i></a>
                         </li>
-                        <!-- <li class="nav-item">
-                            <a class="nav-link active" href="portfolio-4.html">Contact <i class="fa-solid fa-at fa-xl"></i></a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
-    <section class="container">
+
+    <section class="container" style="margin-bottom: 7vh;">
         <div class="row">
-            <div class="col-3 text-center rounded shadow" id="section-profil" style="margin-bottom:7vh;">
-                <img src="../Image/photo-cv.jpg" alt="photo-cv" class="photo-cv">
+            <div class="col-3 text-center rounded shadow" id="section-profil">
+                <img src="../Image/photo-cv.jpg" alt="photo-cv" class="photo-cv img-fluid">
                 <h3>Bonjour !</h3>
                 <h1 id="titre-profil"> Je suis Pauline Drouvin &#128075</h1>
                 <p>Je suis ingénieure écologue en reconversion dans le développement web !
                     J'ai acquis les bases de programmation grâce à la "Nurserie Numérique". &#128187 <br>
-                    Je continue de me former en ligne en parallèle de ma recherche d'alternance pour compléter 
+                    Je continue de me former en ligne en parallèle de ma recherche d'alternance pour compléter
                     mes connaissances de bases. J'ai hâte d'échanger avec vous pour de nouvelles opportunités !
                 </p>
-                <button id="telecharger"class="rounded" onclick="window.location.href='https://drive.google.com/file/d/1aK2aeKeeDy4cADp1lTSfpeFqmGNMIrpG/view?usp=drive_link'">Télécharger le CV</button>
-                <button id="contactez-moi" class="rounded"><a href="mailto:pauline.drvn@hotmail.com" style="text-decoration: none; color:black;">Contactez-moi</a></button>
+                <button id="telecharger" class="rounded"
+                    onclick="window.location.href='https://drive.google.com/file/d/1aK2aeKeeDy4cADp1lTSfpeFqmGNMIrpG/view?usp=drive_link'">Télécharger
+                    le CV</button>
+                <button id="contactez-moi" class="rounded"><a href="mailto:pauline.drvn@hotmail.com"
+                        style="text-decoration: none; color:black;">Contactez-moi</a></button>
                 <div>
-                    <img src="../Image/qr-code-linkedin.png" alt="qrcode-linkedin" class="qrcode">
-                    <img src="../Image/qr-code-github.png" alt="qr-code-github" class="qrcode">
+                    <img src="../Image/qr-code-linkedin.png" alt="qrcode-linkedin" class="qrcode img-fluid">
+                    <img src="../Image/qr-code-github.png" alt="qr-code-github" class="qrcode img-fluid">
                 </div>
             </div>
 
-            <div class="col" id="section-comp-exp">
-                <div class="row ms-3">
+            <div class="col-5" id="section-comp-exp">
+                <div class="row">
                     <div class="row-6 rounded shadow text-center" id="parcours-resume">
                         <h3>Mon parcours professionnel</h3>
                         <ul id="liste-xp">
                             <li>Octobre 2023 : Nurserie Numérique</li>
                             <li>Septembre 2022 : Ingénieure Ecologue à Entime</li>
-                            <li>2021 - 2022 : Service Civique à l'Observatoire Régionale de la Biodiversité des Hauts-de-France</li>
+                            <li>2021 - 2022 : Service Civique à l'Observatoire Régionale de la Biodiversité des
+                                Hauts-de-France</li>
                             <li>2020 : Chargée d'études biodiversité à Eco'Logic</li>
-                            <li>2018 - 2019 : Assistante chercheur CRNS</li>
+                            <li>2018 - 2019 : Assistante chercheur CNRS</li>
                         </ul>
                     </div>
-                    <div class="row-6 text-center rounded shadow mt-3 mb-3" id="competences-icon">
+                    <div class="row-6 text-center rounded shadow" id="competences-icon"   style="margin-top: 4vh;">
                         <h3>Mes compétences numériques</h3>
                         <div>
-                            <img src="../Image/html.png" alt="HTML">
-                            <img src="../Image/css.png" alt="CSS">
-                            <img src="../Image/js.png" alt="JS">
-                            <img src="../Image/bootstrap.png" alt="Bootstrap">
-                            <img src="../Image/sql.png" alt="SQL">
-                            <img src="../Image/R.png" alt="R">
-                            <img src="../Image/wordpress_PNG74.png" alt="WordPress">
-                            <img src="../Image/figma.png" alt="Figma">
-                            <img src="../Image/canva.jpg" alt="Canva">
-                            <img src="../Image/GitHub_logo.png" alt="GitHub">
+                            <img src="../Image/html.png" alt="HTML" class="img-fluid">
+                            <img src="../Image/css.png" alt="CSS" class="img-fluid">
+                            <img src="../Image/js.png" alt="JS" class="img-fluid">
+                            <img src="../Image/bootstrap.png" alt="Bootstrap" class="img-fluid">
+                            <img src="../Image/sql.png" alt="SQL" class="img-fluid">
+                            <img src="../Image/R.png" alt="R" class="img-fluid">
+                            <img src="../Image/wordpress_PNG74.png" alt="WordPress" class="img-fluid">
+                            <img src="../Image/figma.png" alt="Figma" class="img-fluid">
+                            <img src="../Image/canva.jpg" alt="Canva" class="img-fluid">
+                            <img src="../Image/GitHub_logo.png" alt="GitHub" class="img-fluid">
                         </div>
 
                     </div>
                 </div>
             </div>
-            <div class="col" id="section-projet">
-                <div class="rounded shadow text-center ms-2" id="projet-resume">
-                    <h3 class="mb-3">Mes projets</h3>
+            <div class="col-4" id="section-projet">
+                <div class="rounded shadow text-center" id="projet-resume">
+                    <h3 class="mb-5">Mes projets autoditactes</h3>
                     <h6>PopCorn Culture : Octobre 2023</h6>
-                    <a href="portfolio-3.html#projet1"><img src="../Image/ex-cine.png" alt="projet1" class="img-projet"></a>
+                    <a href="portfolio-3.html#projet1"><img src="../Image/ex-cine.png" alt="projet1"
+                            class="img-projet"></a>
                     <h6>Guide de l'EcoUrbain : Avril 2024 <i>(en cours)</i></h6>
-                    <a href="portfolio-3.html#projet2"><img src="../Image/ex-blog.png" alt="projet2" class="img-projet"></a>
+                    <a href="portfolio-3.html#projet2"><img src="../Image/ex-blog.png" alt="projet2"
+                            class="img-projet"></a>
                     <h6>Wild Guess : Mai 2024 <i>(en cours)</i></h6>
-                    <a href="portfolio-3.html#projet3"><img src="../Image/ex-quizz.png" alt="projet3" class="img-projet"></a>
+                    <a href="portfolio-3.html#projet3"><img src="../Image/ex-quizz.png" alt="projet3"
+                            class="img-projet"></a>
                 </div>
             </div>
         </div>
